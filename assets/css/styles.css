@@ -77,10 +77,39 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: var(--z-fixed);
+}
 
+.nav{
+    position: fixed;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__toggle,
+.nav__close{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 
 /* Navigation for mobile devices */
-
+@media screen smf (max-width:1150px) {
+    .nav__menu{
+        position: fixed;
+        top:0;
+        right:0;
+        background-color: hsla(0,0,100%, .1);
+        backdrop-filter: blur(16px);
+    }
+}
 
 /* Show menu */
 
