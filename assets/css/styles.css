@@ -87,11 +87,16 @@ img {
 }
 
 .nav{
-    position: fixed;
+    position: relative;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav__logo{
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
 }
 
 .nav__toggle,
@@ -104,9 +109,9 @@ img {
 @media screen and (max-width:1150px) {
     .nav__menu{
         position: fixed;
-        top:0;
+        top: 0;
         right: -100%;
-        background-color: hsla(0, 0,100%, .1);
+        background-color: hsla(0, 0%, 100%, .1);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         width: 80%;
@@ -139,6 +144,9 @@ img {
 
 
 /* Show menu */
+.show-menu{
+  right: 0;
+}
 
 
 /*=============== HOME ===============*/
