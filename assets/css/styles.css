@@ -218,6 +218,7 @@ transition: transform .4s;
 transform:translateX(.5rem);
 }
 
+
 .home__social{
   position: absolute;
   z-index: var(--z-tooltip);
@@ -279,6 +280,22 @@ transform:translateX(.5rem);
 }
 
 
+.home__social{
+  position: absolute;
+  z-index: var(--z-tooltip);
+  left: 1.5rem;
+  bottom:4rem;
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.home__social-link{
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+/* Swiper class */
+  
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
 
