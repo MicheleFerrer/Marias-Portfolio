@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -66,9 +66,9 @@
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home">
-            <div class="home__swiper">
-                <div>
-                    <article class="home__article">
+            <div class="home__swiper swiper">
+                <div class="swiper-wrapper">
+                    <article class="home__article swiper-slide">
                         <div class="home__data container">
                             <h3 class="home__subtitle">Architecture</h3>
                             <h1 class="home__title">Facet Project-Hilldale Nine</h1>
@@ -82,7 +82,7 @@
                         <div class="home__shadow"></div>
                     </article>
 
-                    <article class="home__article">
+                    <article class="home__article swiper-slide">
                         <div class="home__data container">
                             <h3 class="home__subtitle">Architecture</h3>
                             <h1 class="home__title">Corner Resturant Remodel</h1>
@@ -96,7 +96,7 @@
                         <div class="home__shadow"></div>
                     </article>
 
-                    <article class="home__article">
+                    <article class="home__article swiper-slide">
                         <div class="home__data container">
                             <h3 class="home__subtitle">Architecture</h3>
                             <h1 class="home__title">Challete Residence</h1>
@@ -109,7 +109,7 @@
                         <div class="home__shadow"></div>
                     </article>
 
-                    <article class="home__article">
+                    <article class="home__article swiper-slide">
                         <div class="home__data container">
                             <h3 class="home__subtitle">Architecture</h3>
                             <h1 class="home__title">Dohney Townhomes</h1>
@@ -138,14 +138,21 @@
                         <i class="ri-linkedin-line"></i>
                     </a>
                 </div>
+
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Navigation Buttons -->
+                <div class="swiper-navigation"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+
             </div>
-
         </section>
-
-
-        </main>
+    </main>
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
