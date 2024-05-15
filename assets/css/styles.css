@@ -184,6 +184,38 @@ img {
   text-align: center;
 }
 
+.home__subtitle{
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
+}
+
+.home__title{
+  font-size: var(--biggest-font-size);
+  margin-bottom: 2.5rem;
+  font-weight: var(--font-bold);
+}
+
+.home__button{
+  color: var(--white-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+  font-weight: var(--font-semi-bold);
+}
+
+.home__button i{
+font-size: 1.5rem;
+font-weight: initial;
+transition: transform .4s;
+}
+
+.home__button:hover i{
+transform:translateX(.5rem);
+}
+
+
+
 /* Swiper class */
 
 
