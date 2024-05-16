@@ -29,7 +29,7 @@
 }
 
 /*========== Responsive typography ==========*/
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1000px) {
   :root {
     --biggest-font-size: 4rem;
     --big-font-size: 3rem;
@@ -106,7 +106,7 @@ img {
 }
 
 /* Navigation for mobile devices */
-@media screen and (max-width:800px) {
+@media screen and (max-width: 1150px) {
     .nav__menu{
         position: fixed;
         top: 0;
@@ -119,8 +119,7 @@ img {
         padding: 6rem 3rem 0;
         transition: right .4s;
     }
-}
-
+  }
 .nav__list{
   display: flex;
   flex-direction: column;
@@ -143,11 +142,11 @@ img {
 }
 
 
+
 /* Show menu */
 .show-menu{
   right: 0;
 }
-
 
 /*=============== HOME ===============*/
 .home__swiper{
@@ -178,7 +177,12 @@ img {
   object-fit: cover;
   object-position: center;
   z-index: -1;
+  image-rendering: high-quality;
+  image-resolution: high-quality;
 }
+
+
+
 .home__shadow{
   background-color: hsla(0,0%,0%,0.05);
   z-index: -1;
@@ -297,14 +301,14 @@ transform:translateX(.5rem);
   
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
-@media  and (min-width: 768px) {
+
+@media screen and (min-width: 768px) {
   .nav__menu{
     width: 50%;
   }
 }
-
 /* For large devices */
-@media  and (min-width: 1150px){
+@media screen and (min-width: 1150px){
   .container {
     margin-inline: auto;
   }
@@ -338,13 +342,55 @@ transform:translateX(.5rem);
   margin-bottom: 4.5rem;
 }
 .home__content{
-  max-width: 1120px;
+  max-width: 1150px;
   margin-inline: auto;
   left: 0;
   right: 0;
 }
+
+.home__social{
+  left: 0;
+}
+
+.swiper-pagination{
+  top: 10rem;
+}
+.swiper-pagination-total{
+font-size: 1.5rem;
+}
+
+.swiper-navigation{
+  right: 0;
+  column-gap: 3.5rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+  font-size: 3rem;
+}
 }
 /* For taller devices */
-
+@media screen and (min-width: 800px) and (min-height: 800px){
+  .home__article{
+    padding-top: 17rem;
+  }
+.swiper-pagination{
+  top: 13rem;
+}
+}
 
 /* For 2K resolutions (2048 x 1152) */
+
+@media screen and (min-width: 2048px){
+.container,
+.home__content{
+  max-width: 1550px;
+}
+.home__swiper,
+.home__content,
+.home__img,
+.home__shadow{
+  max-height: 1000px;
+}
+
+}
