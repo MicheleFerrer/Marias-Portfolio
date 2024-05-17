@@ -29,7 +29,7 @@
 }
 
 /*========== Responsive typography ==========*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1150px) {
   :root {
     --biggest-font-size: 4rem;
     --big-font-size: 3rem;
@@ -68,7 +68,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 100%;
+  max-width: 1100px;
   margin-inline: 1.5rem;
 }
 
@@ -79,9 +79,9 @@ img {
 /*=============== HEADER & NAV ===============*/
 .header{
     position: fixed;
-    width: 100%;
+    width: 90%;
     top: 0;
-    left: 0;
+    left: 1rem;
     background-color: transparent;
     z-index: var(--z-fixed);
 }
@@ -225,10 +225,10 @@ transform:translateX(.5rem);
 .home__social{
   position: absolute;
   z-index: var(--z-tooltip);
-  left: 1.5rem;
   bottom:4rem;
   display: grid;
   row-gap: 1.5rem;
+ left: 1rem;
 }
 
 .home__social-link{
@@ -286,7 +286,7 @@ transform:translateX(.5rem);
 .home__social{
   position: absolute;
   z-index: var(--z-tooltip);
-  left: 1.5rem;
+  left: 1rem;
   bottom:4rem;
   display: grid;
   row-gap: 1.5rem;
@@ -333,6 +333,7 @@ transform:translateX(.5rem);
 
 .home__data{
   text-align: initial;
+  margin-left: 200px;
 }
 
 .home__subtitle{
@@ -342,14 +343,14 @@ transform:translateX(.5rem);
   margin-bottom: 4.5rem;
 }
 .home__content{
-  max-width: 1150px;
+  max-width: 1200px;
   margin-inline: auto;
   left: 0;
   right: 0;
 }
 
 .home__social{
-  left: 0;
+  left: 1rem;
 }
 
 .swiper-pagination{
@@ -383,8 +384,9 @@ font-size: 1.5rem;
 
 @media screen and (min-width: 2048px){
 .container,
+.home__social,
 .home__content{
-  max-width: 1550px;
+  max-width: 100%;
 }
 .home__swiper,
 .home__content,
